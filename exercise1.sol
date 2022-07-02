@@ -4,32 +4,32 @@ pragma solidity >=0.7.0 <0.9.0;
 
 
 contract Demo {
-    uint a;
-    uint b;
+    int a;
+    int b;
 
-    function setValues(uint _a, uint _b) public {
+    function setValues(int _a, int _b) public {
         a = _a;
         b = _b;
     }
 
 
-    function add() public view returns (uint){
+    function add() public view returns (int){
         return a + b;
     }
 
-    function subtract() public view returns (uint){
+    function subtract() public view returns (int){
         return a - b;
     }
 
-    function multiply() public view returns (uint){
+    function multiply() public view returns (int){
         return a * b;
     }
 
-    function divide() public view returns (uint){
+    function divide() public view returns (int){
         return a / b;
     }
 
-    function divideRemainder() public view returns (uint){
+    function divideRemainder() public view returns (int){
         return a % b;
     }
 }
